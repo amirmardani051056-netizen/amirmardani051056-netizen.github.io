@@ -1,1 +1,366 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>امیرمحمد مردانی | وب‌سایت شخصی</title>
+
+  <meta name="description" content="وب‌سایت رسمی امیرمحمد مردانی؛ معرفی فعالیت‌ها، دستاوردها و پروژه‌های علمی و آموزشی.">
+  <meta name="keywords" content="امیرمحمد مردانی, امیر محمد مردانی, موشک آبی, شهرآرا, پروژه علمی">
+  <meta name="author" content="امیرمحمد مردانی">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="امیرمحمد مردانی | وب‌سایت شخصی">
+  <meta property="og:description" content="معرفی فعالیت‌ها و دستاوردهای امیرمحمد مردانی">
+  <meta property="og:type" content="website">
+
+  <link rel="canonical" href="https://amirmardani051056-netizen.github.io/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "امیرمحمد مردانی",
+    "url": "https://amirmardani051056-netizen.github.io/",
+    "description": "وب‌سایت شخصی امیرمحمد مردانی؛ معرفی فعالیت‌ها و دستاوردهای علمی و آموزشی."
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: #080e1c;
+      color: #f1f5f9;
+      line-height: 2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid #263249;
+      background: #0b1425;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      color: #60a5fa;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav ul a {
+      color: #cbd5e1;
+      font-size: 14px;
+      transition: .3s;
+    }
+
+    nav ul a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      padding: 100px 0 90px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #17345c 0%, #080e1c 65%);
+    }
+
+    .tag {
+      display: inline-block;
+      color: #93c5fd;
+      border: 1px solid #315b89;
+      background: #122641;
+      padding: 5px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 55px);
+      font-weight: 800;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    h1 span {
+      color: #60a5fa;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #b6c3d5;
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      background: #2563eb;
+      padding: 11px 27px;
+      border-radius: 9px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .button:hover {
+      background: #3b82f6;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      font-size: 27px;
+      margin-bottom: 30px;
+      color: #93c5fd;
+    }
+
+    .about-box {
+      background: #111c30;
+      border: 1px solid #25344c;
+      border-radius: 16px;
+      padding: 30px;
+      color: #cbd5e1;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111c30;
+      border: 1px solid #25344c;
+      border-radius: 15px;
+      padding: 25px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #3b82f6;
+    }
+
+    .card h3 {
+      color: #93c5fd;
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: #b6c3d5;
+      font-size: 14px;
+    }
+
+    .news-link {
+      display: inline-block;
+      color: #60a5fa;
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .news-link:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      text-align: center;
+      background: #0d1729;
+    }
+
+    .contact p {
+      color: #b6c3d5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8292a8;
+      border-top: 1px solid #25344c;
+      font-size: 13px;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      nav ul {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">امیرمحمد مردانی</div>
+      <ul>
+        <li><a href="#home">خانه</a></li>
+        <li><a href="#about">درباره من</a></li>
+        <li><a href="#achievements">دستاوردها</a></li>
+        <li><a href="#contact">ارتباط</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <span class="tag">وب‌سایت شخصی و رسمی</span>
+
+      <h1>
+        سلام، من <span>امیرمحمد مردانی</span> هستم.
+      </h1>
+
+      <p>
+        به وب‌سایت شخصی من خوش آمدید.
+        اینجا فضایی برای معرفی فعالیت‌ها، تجربیات،
+        دستاوردها و مسیر علمی و حرفه‌ای من است.
+      </p>
+
+      <a href="#about" class="button">بیشتر درباره من</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">درباره من</h2>
+
+      <div class="about-box">
+        <p>
+          من امیرمحمد مردانی هستم.
+          به یادگیری، فعالیت‌های علمی، فناوری و تجربه‌های
+          جدید علاقه‌مندم. باور دارم که پیشرفت نتیجه
+          تلاش مستمر، خلاقیت و پشتکار است.
+        </p>
+        <p style="margin-top:15px">
+          هدف من توسعه دانش، کسب تجربه و مشارکت در
+          فعالیت‌هایی است که بتوانند تأثیر مثبتی در
+          جامعه داشته باشند.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="container">
+      <h2 class="section-title">دستاوردها و فعالیت‌ها</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>🚀 پروژه موشک آبی</h3>
+          <p>
+            مشارکت در فعالیت علمی و خلاقانه موشک آبی
+            که موفقیت گروه بچه‌های محله وحید در سطح
+            کشور در رسانه شهرآرا بازتاب یافته است.
+          </p>
+
+          <a
+            class="news-link"
+            href="https://mashhadchehreh.shahraranews.ir/fa/news/11766/موشک-آبی-بچه‌های-محله-وحید-در-کشور-اول-شد"
+            target="_blank"
+            rel="noopener noreferrer">
+            مشاهده گزارش شهرآرا ←
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>📚 فعالیت‌های علمی و آموزشی</h3>
+          <p>
+            علاقه‌مند به آموزش، یادگیری و گسترش دانش
+            در حوزه علوم و به‌ویژه فیزیک.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>💡 فناوری و نوآوری</h3>
+          <p>
+            علاقه‌مند به ایده‌پردازی، فناوری‌های نوین،
+            پروژه‌های کاربردی و توسعه مهارت‌های فنی.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">ارتباط با من</h2>
+      <p>
+        برای آشنایی بیشتر با فعالیت‌ها و دستاوردهای من،
+        می‌توانید از بخش‌های مختلف این وب‌سایت بازدید کنید.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© تمامی حقوق این وب‌سایت متعلق به امیرمحمد مردانی است.</p>
+</footer>
+
+</body>
+</html>
