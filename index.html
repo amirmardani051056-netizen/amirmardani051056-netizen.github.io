@@ -4,19 +4,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>امیرمحمد مردانی | وب‌سایت شخصی</title>
+
 <meta name="description" content="وب‌سایت شخصی امیرمحمد مردانی، دانشجو معلم آموزش فیزیک؛ معرفی مسیر علمی، تحصیلات، افتخارات و پروژه‌ها.">
 <meta name="keywords" content="امیرمحمد مردانی, آموزش فیزیک, دانشگاه فرهنگیان, موشک آبی, الکتروتکنیک">
 <meta name="author" content="امیرمحمد مردانی">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://amirmardani051056-netizen.github.io/">
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="امیرمحمد مردانی | وب‌سایت شخصی">
 <meta property="og:description" content="مسیر علمی، دانشگاهی و پروژه‌های امیرمحمد مردانی">
 <meta property="og:image" content="profile.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,7 +34,9 @@
   "description": "Scientific, educational and technology projects of Amirmohammad Mardani"
 }
 </script>
+
 <style>
+
 :root {
   --bg: #fff;
   --surface: #fff;
@@ -41,8 +48,18 @@
   --shadow: 0 10px 35px rgba(0,0,0,.055);
   --radius: 17px;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
   background: var(--bg);
@@ -50,11 +67,23 @@ body {
   line-height: 2;
   overflow-x: hidden;
 }
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; }
-.container { width: min(1120px, 90%); margin: auto; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
 
 /* HEADER */
+
 header {
   position: sticky;
   top: 0;
@@ -63,6 +92,7 @@ header {
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
+
 nav {
   min-height: 78px;
   display: flex;
@@ -70,14 +100,24 @@ nav {
   justify-content: space-between;
   gap: 20px;
 }
+
 .logo {
   font-size: 27px;
   font-weight: 800;
   letter-spacing: 1px;
   white-space: nowrap;
 }
-.logo span { color: #777; }
-.nav-right { display: flex; align-items: center; gap: 23px; }
+
+.logo span {
+  color: #777;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -85,15 +125,20 @@ nav ul {
   gap: 20px;
   flex-wrap: wrap;
 }
+
 nav ul a {
   color: #555;
   font-size: 13px;
   font-weight: 600;
   transition: .25s;
 }
-nav ul a:hover { color: #000; }
+
+nav ul a:hover {
+  color: #000;
+}
 
 /* LANGUAGE SWITCH */
+
 .language-switch {
   display: flex;
   align-items: center;
@@ -104,6 +149,7 @@ nav ul a:hover { color: #000; }
   background: #fafafa;
   flex-shrink: 0;
 }
+
 .language-switch button {
   border: none;
   background: transparent;
@@ -116,9 +162,14 @@ nav ul a:hover { color: #000; }
   font-weight: 700;
   transition: .25s;
 }
-.language-switch button.active { background: #111; color: #fff; }
 
-/* HERO */
+.language-switch button.active {
+  background: #111;
+  color: #fff;
+}
+
+/* PROFESSIONAL PROFILE HERO */
+
 .hero {
   min-height: unset;
   display: block;
@@ -126,6 +177,7 @@ nav ul a:hover { color: #000; }
   background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
   border-bottom: 1px solid var(--border);
 }
+
 .hero-layout {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
@@ -133,8 +185,18 @@ nav ul a:hover { color: #000; }
   gap: 45px;
   direction: ltr;
 }
-.hero-content { padding: 45px 0; text-align: right; direction: rtl; }
-html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
+
+.hero-content {
+  padding: 45px 0;
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="ltr"] .hero-content {
+  text-align: left;
+  direction: ltr;
+}
+
 .eyebrow {
   display: inline-block;
   font-size: 12px;
@@ -144,13 +206,18 @@ html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
   padding: 6px 17px;
   border-radius: 30px;
 }
+
 .hero h1 {
   font-size: clamp(38px, 5vw, 62px);
   font-weight: 800;
   line-height: 1.5;
   margin: 25px 0 15px;
 }
-.hero h1 span { color: #777; }
+
+.hero h1 span {
+  color: #777;
+}
+
 .hero-description {
   max-width: 550px;
   margin: 0;
@@ -158,6 +225,7 @@ html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
   color: #666;
   line-height: 2.4;
 }
+
 .hero-buttons {
   display: flex;
   justify-content: flex-start;
@@ -167,6 +235,7 @@ html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
 }
 
 /* PROFILE IMAGE */
+
 .hero-photo {
   width: 100%;
   height: 460px;
@@ -175,6 +244,7 @@ html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
   background: #e9edf2;
   box-shadow: 0 15px 45px rgba(0,0,0,.12);
 }
+
 .hero-photo img {
   width: 100%;
   height: 100%;
@@ -183,9 +253,13 @@ html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
   object-position: 73% center;
   transition: transform .5s ease;
 }
-.hero-photo:hover img { transform: scale(1.025); }
+
+.hero-photo:hover img {
+  transform: scale(1.025);
+}
 
 /* BUTTONS */
+
 .btn {
   display: inline-block;
   padding: 11px 27px;
@@ -194,20 +268,49 @@ html[dir="ltr"] .hero-content { text-align: left; direction: ltr; }
   font-weight: 700;
   transition: .3s;
 }
-.btn-primary { background: #111; color: white; }
-.btn-primary:hover { background: #444; transform: translateY(-3px); }
-.btn-outline { border: 1px solid #222; color: #111; }
-.btn-outline:hover { background: #eee; transform: translateY(-3px); }
+
+.btn-primary {
+  background: #111;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #444;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 1px solid #222;
+  color: #111;
+}
+
+.btn-outline:hover {
+  background: #eee;
+  transform: translateY(-3px);
+}
 
 /* GENERAL SECTIONS */
-section { padding: 90px 0; }
-.section-heading { text-align: center; margin-bottom: 48px; }
+
+section {
+  padding: 90px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
 .section-heading h2 {
   font-size: 29px;
   font-weight: 800;
   margin-bottom: 8px;
 }
-.section-heading p { color: var(--gray); font-size: 13px; }
+
+.section-heading p {
+  color: var(--gray);
+  font-size: 13px;
+}
+
 .section-line {
   width: 42px;
   height: 3px;
@@ -217,6 +320,7 @@ section { padding: 90px 0; }
 }
 
 /* ABOUT */
+
 .about-box {
   max-width: 900px;
   margin: auto;
@@ -225,16 +329,29 @@ section { padding: 90px 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
-.about-box p { color: #555; font-size: 14px; line-height: 2.5; }
-.about-box p + p { margin-top: 15px; }
+
+.about-box p {
+  color: #555;
+  font-size: 14px;
+  line-height: 2.5;
+}
+
+.about-box p + p {
+  margin-top: 15px;
+}
 
 /* TIMELINE */
-.timeline-section { background: var(--soft); }
+
+.timeline-section {
+  background: var(--soft);
+}
+
 .timeline {
   position: relative;
   max-width: 900px;
   margin: 55px auto 0;
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -244,12 +361,17 @@ section { padding: 90px 0; }
   width: 2px;
   background: #d5d5d5;
 }
+
 .timeline-item {
   position: relative;
   padding-right: 65px;
   margin-bottom: 55px;
 }
-.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
 .timeline-dot {
   position: absolute;
   right: 9px;
@@ -262,6 +384,7 @@ section { padding: 90px 0; }
   box-shadow: 0 0 0 2px #222;
   z-index: 2;
 }
+
 .timeline-card {
   background: white;
   border: 1px solid var(--border);
@@ -270,10 +393,12 @@ section { padding: 90px 0; }
   box-shadow: var(--shadow);
   transition: .35s;
 }
+
 .timeline-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0,0,0,.09);
 }
+
 .timeline-image {
   display: block;
   width: 100%;
@@ -283,6 +408,7 @@ section { padding: 90px 0; }
   background: #f5f5f5;
   padding: 8px;
 }
+
 .image-fallback {
   display: none;
   width: 100%;
@@ -294,18 +420,43 @@ section { padding: 90px 0; }
   background: linear-gradient(135deg,#f0f0f0,#fafafa);
   color: #555;
 }
-.image-fallback strong { font-size: 18px; }
-.image-fallback small { font-size: 12px; color: #888; }
-.fallback-icon { font-size: 48px; color: #999; }
-.timeline-content { padding: 28px; }
+
+.image-fallback strong {
+  font-size: 18px;
+}
+
+.image-fallback small {
+  font-size: 12px;
+  color: #888;
+}
+
+.fallback-icon {
+  font-size: 48px;
+  color: #999;
+}
+
+.timeline-content {
+  padding: 28px;
+}
+
 .timeline-date {
   display: inline-block;
   color: #888;
   font-size: 12px;
   margin-bottom: 8px;
 }
-.timeline-content h3 { font-size: 21px; margin-bottom: 10px; }
-.timeline-content p { color: #666; font-size: 14px; line-height: 2.3; }
+
+.timeline-content h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 2.3;
+}
+
 .timeline-tag {
   display: inline-block;
   margin: 14px 5px 0 0;
@@ -317,11 +468,13 @@ section { padding: 90px 0; }
 }
 
 /* CARDS */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 23px;
 }
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -330,19 +483,31 @@ section { padding: 90px 0; }
   box-shadow: 0 5px 22px rgba(0,0,0,.035);
   transition: .3s;
 }
+
 .card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow);
   border-color: #aaa;
 }
+
 .card-number {
   color: #999;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.card h3 { font-size: 18px; margin: 12px 0; }
-.card p { color: #666; font-size: 13px; line-height: 2.3; }
+
+.card h3 {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.card p {
+  color: #666;
+  font-size: 13px;
+  line-height: 2.3;
+}
+
 .card-link {
   display: inline-block;
   color: #222;
@@ -350,9 +515,13 @@ section { padding: 90px 0; }
   font-weight: 700;
   margin-top: 15px;
 }
-.card-link:hover { text-decoration: underline; }
 
-/* ACHIEVEMENT & PROJECT LABELS */
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* PROFESSIONAL ACHIEVEMENT & PROJECT LABELS */
+
 .achievement-kicker,
 .project-kicker {
   display: inline-flex;
@@ -365,6 +534,7 @@ section { padding: 90px 0; }
   line-height: 1.8;
   margin-bottom: 9px;
 }
+
 .achievement-kicker::before,
 .project-kicker::before {
   content: "";
@@ -375,24 +545,37 @@ section { padding: 90px 0; }
   background: #777;
   flex-shrink: 0;
 }
+
 .achievement-card h3,
-.project-card h3 { margin-top: 5px; }
+.project-card h3 {
+  margin-top: 5px;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.project-card .project-label { margin-top: 13px; margin-left: 5px; }
+
+.project-card .project-label {
+  margin-top: 13px;
+  margin-left: 5px;
+}
+
 .project-card .project-label[data-i18n="project1Status"] {
   background: #f5f5f5;
   border-color: #d8d8d8;
   color: #333;
   font-weight: 700;
 }
-html[dir="ltr"] .achievement-kicker,
-html[dir="ltr"] .project-kicker { letter-spacing: .15px; }
 
-/* REFINED LABELS */
+html[dir="ltr"] .achievement-kicker,
+html[dir="ltr"] .project-kicker {
+  letter-spacing: .15px;
+}
+
+/* REFINED ACHIEVEMENT & PROJECT LABELS */
+
 .achievement-kicker,
 .project-kicker {
   display: inline-flex;
@@ -404,6 +587,7 @@ html[dir="ltr"] .project-kicker { letter-spacing: .15px; }
   line-height: 1.9;
   margin-bottom: 10px;
 }
+
 .achievement-kicker::before,
 .project-kicker::before {
   content: "";
@@ -414,101 +598,401 @@ html[dir="ltr"] .project-kicker { letter-spacing: .15px; }
   background: #777;
   flex-shrink: 0;
 }
-.achievement-card h3,
-.project-card h3 { margin-top: 4px; }
 
-/* CONTACT */
-.contact-section { background: var(--soft); }
-.contact-box {
+.achievement-card h3,
+.project-card h3 {
+  margin-top: 4px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-card .project-label {
+  margin: 12px 5px 0 0;
+}
+
+.project-card .project-status {
+  color: #333;
+  background: #f4f4f4;
+  border-color: #d7d7d7;
+  font-weight: 700;
+}
+
+html[dir="ltr"] .achievement-kicker,
+html[dir="ltr"] .project-kicker {
+  letter-spacing: .1px;
+}
+
+/* ACHIEVEMENTS */
+
+.achievements-section {
+  background: var(--soft);
+}
+
+.achievement-card {
+  position: relative;
+}
+
+.achievement-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: #222;
+  border-radius: 0 15px 15px 0;
+}
+
+/* PROJECTS */
+
+.project-card {
+  min-height: 220px;
+}
+
+.project-label {
+  display: inline-block;
+  font-size: 11px;
+  color: #777;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 4px 12px;
+  margin-top: 15px;
+}
+
+/* SKILLS */
+
+.skills-section {
+  background: #fff;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
   max-width: 900px;
   margin: auto;
-  padding: 38px;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
 }
+
+.skill {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background: #fafafa;
+  color: #444;
+  font-size: 13px;
+  transition: .25s;
+}
+
+.skill:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  transform: translateY(-3px);
+}
+
+/* CONTACT */
+
+.contact-section {
+  background: var(--soft);
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 750px;
+  margin: auto;
+  padding: 35px;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: var(--radius);
+}
+
 .contact-box p {
-  color: #555;
+  color: #666;
   font-size: 14px;
   line-height: 2.4;
 }
-.contact-items {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 18px;
-  margin-top: 28px;
+  margin-top: 30px;
 }
+
 .contact-item {
-  padding: 18px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 20px;
   background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  transition: .3s;
+  direction: rtl;
 }
+
+.contact-item:hover {
+  background: #111;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.contact-icon {
+  font-size: 25px;
+}
+
+.contact-item span:last-child {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact-item small {
+  font-size: 11px;
+  color: #888;
+}
+
 .contact-item strong {
-  display: block;
   font-size: 13px;
-  margin-bottom: 5px;
-}
-.contact-item a {
-  color: #333;
-  font-size: 14px;
+  font-weight: 700;
   direction: ltr;
-  display: inline-block;
+  unicode-bidi: isolate;
+}
+
+.contact-item:hover small {
+  color: #ccc;
 }
 
 /* FOOTER */
+
 footer {
-  padding: 28px 0;
-  text-align: center;
   background: #111;
   color: #ddd;
-  font-size: 12px;
+  text-align: center;
+  padding: 30px 0;
 }
-footer p + p { margin-top: 5px; color: #999; }
 
-/* SCROLL REVEAL */
+footer p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+footer strong {
+  color: #fff;
+}
+
+/* ANIMATIONS */
+
 .reveal {
   opacity: 0;
   transform: translateY(25px);
   transition: opacity .7s ease, transform .7s ease;
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  * {
+    transition-duration: .01ms !important;
+  }
+}
+
+/* ENGLISH LAYOUT */
+
+html[dir="ltr"] body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html[dir="ltr"] nav ul a {
+  font-size: 13px;
+}
+
+html[dir="ltr"] .timeline::before {
+  right: auto;
+  left: 19px;
+}
+
+html[dir="ltr"] .timeline-item {
+  padding-right: 0;
+  padding-left: 65px;
+}
+
+html[dir="ltr"] .timeline-dot {
+  right: auto;
+  left: 9px;
+}
+
+html[dir="ltr"] .timeline-tag {
+  margin: 14px 5px 0 0;
+}
+
+html[dir="ltr"] .achievement-card::after {
+  right: auto;
+  left: 0;
+  border-radius: 15px 0 0 15px;
+}
+
+html[dir="ltr"] .contact-item {
+  direction: ltr;
+}
+
+html[dir="ltr"] .contact-item span:last-child {
+  text-align: left;
+}
+
+html[dir="ltr"] .contact-item strong {
+  text-align: left;
+}
+
+html[dir="ltr"] .card-link {
+  direction: ltr;
+}
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero-layout { grid-template-columns: 1fr 1fr; gap: 25px; }
-  .hero-photo { height: 390px; }
-  nav ul { gap: 12px; }
-  .nav-right { gap: 14px; }
+
+@media(max-width:750px) {
+
+  nav {
+    flex-direction: column;
+    padding: 13px 0;
+    gap: 10px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  nav ul a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: unset;
+    padding: 30px 0;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-photo {
+    grid-row: 1;
+    height: 350px;
+    max-width: 430px;
+    margin: auto;
+  }
+
+  .hero-content {
+    grid-row: 2;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding-right: 48px;
+    margin-bottom: 38px;
+  }
+
+  .timeline-image {
+    height: 180px;
+  }
+
+  .image-fallback {
+    height: 180px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+
+  .about-box {
+    padding: 24px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  html[dir="ltr"] .timeline-item {
+    padding-left: 48px;
+  }
 }
-@media (max-width: 768px) {
-  nav { padding: 12px 0; flex-direction: column; }
-  .nav-right { width: 100%; justify-content: center; flex-wrap: wrap; }
-  nav ul { justify-content: center; }
-  .hero { padding: 25px 0 40px; }
-  .hero-layout { grid-template-columns: 1fr; gap: 15px; }
-  .hero-content { padding: 20px 0; text-align: center; }
-  .hero-description { margin: auto; }
-  .hero-buttons { justify-content: center; }
-  .hero-photo { height: 360px; max-width: 470px; margin: auto; }
-  section { padding: 65px 0; }
-  .grid { grid-template-columns: 1fr; }
-  .timeline-item { padding-right: 48px; }
-  .timeline::before { right: 14px; }
-  .timeline-dot { right: 4px; }
-  .about-box, .contact-box { padding: 25px; }
-  .contact-items { grid-template-columns: 1fr; }
+
+@media(max-width:380px) {
+
+  nav ul {
+    gap: 8px 12px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .btn {
+    padding: 10px 19px;
+  }
+
+  .contact-item strong {
+    font-size: 11px;
+  }
 }
-@media (max-width: 480px) {
-  .logo { font-size: 23px; }
-  nav ul { gap: 10px; }
-  nav ul a { font-size: 11px; }
-  .hero h1 { font-size: 36px; }
-  .hero-photo { height: 300px; }
-  .section-heading h2 { font-size: 25px; }
-  .timeline-content { padding: 20px; }
-}
+
 
 /* TYPOGRAPHY & ACCENT COLOR UPGRADE */
 :root {
@@ -516,42 +1000,811 @@ footer p + p { margin-top: 5px; color: #999; }
   --accent-dark: #115e59;
   --accent-soft: #e8f4f2;
 }
-.hero h1 { font-size: clamp(44px, 5.4vw, 68px); letter-spacing: -1.2px; }
-.hero h1 span { color: var(--accent); }
+
+.hero h1 {
+  font-size: clamp(44px, 5.4vw, 68px);
+  letter-spacing: -1.2px;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
 .section-heading h2 {
   color: var(--accent-dark);
   font-size: clamp(31px, 3.2vw, 38px);
   line-height: 1.55;
 }
-.section-line { width: 58px; height: 4px; background: var(--accent); }
-.card h3, .timeline-content h3 { font-size: 21px; line-height: 1.8; }
-.achievement-kicker, .project-kicker {
+
+.section-line {
+  width: 58px;
+  height: 4px;
+  background: var(--accent);
+}
+
+.card h3,
+.timeline-content h3 {
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+.achievement-kicker,
+.project-kicker {
   color: var(--accent-dark);
   font-size: 13px;
   font-weight: 800;
 }
-.achievement-kicker::before, .project-kicker::before {
+
+.achievement-kicker::before,
+.project-kicker::before {
   width: 28px;
   height: 3px;
   background: var(--accent);
 }
-.card:hover { border-color: rgba(15, 118, 110, .35); }
-.card-link { color: var(--accent-dark); }
-.btn-primary { background: var(--accent-dark); }
-.btn-primary:hover { background: var(--accent); }
-.btn-outline { border-color: var(--accent); color: var(--accent-dark); }
-.btn-outline:hover { background: var(--accent-soft); }
+
+.card:hover {
+  border-color: rgba(15, 118, 110, .35);
+}
+
+.card-link {
+  color: var(--accent-dark);
+}
+
+.btn-primary {
+  background: var(--accent-dark);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+}
+
+.btn-outline {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.btn-outline:hover {
+  background: var(--accent-soft);
+}
+
 .project-card .project-status,
 .project-card .project-label[data-i18n="project1Status"] {
   color: var(--accent-dark);
   background: var(--accent-soft);
   border-color: #c8e4df;
 }
+
 @media (max-width: 768px) {
-  .section-heading h2 { font-size: 28px; }
-  .card h3, .timeline-content h3 { font-size: 19px; }
-  .achievement-kicker, .project-kicker { font-size: 12px; }
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .card h3,
+  .timeline-content h3 {
+    font-size: 19px;
+  }
+
+  .achievement-kicker,
+  .project-kicker {
+    font-size: 12px;
+  }
 }
+
 </style>
 </head>
+
 <body>
+
+<header>
+  <div class="container">
+    <nav>
+
+      <a href="#home" class="logo">AM<span>.</span></a>
+
+      <div class="nav-right">
+
+        <ul>
+          <li><a href="#home" data-i18n="navHome">خانه</a></li>
+          <li><a href="#about" data-i18n="navAbout">درباره من</a></li>
+          <li><a href="#education" data-i18n="navEducation">تحصیلات</a></li>
+          <li><a href="#achievements" data-i18n="navAchievements">افتخارات</a></li>
+          <li><a href="#projects" data-i18n="navProjects">پروژه‌ها</a></li>
+          <li><a href="#skills" data-i18n="navSkills">مهارت‌ها</a></li>
+          <li><a href="#contact" data-i18n="navContact">ارتباط</a></li>
+        </ul>
+
+        <div class="language-switch" aria-label="Language selection">
+          <button type="button" id="faButton" class="active" onclick="changeLanguage('fa')">فارسی</button>
+          <button type="button" id="enButton" onclick="changeLanguage('en')">English</button>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-layout">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">PERSONAL WEBSITE · 2026</div>
+
+      <h1 data-i18n="heroTitle">
+        امیرمحمد <span>مردانی</span>
+      </h1>
+
+      <p class="hero-description" data-i18n="heroDescription">
+        دانشجو معلم رشته آموزش فیزیک؛ علاقه‌مند به علم، آموزش، فناوری و نوآوری.
+        اینجا روایت مسیر یادگیری، فعالیت‌ها و دستاوردهای من است.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#about" class="btn btn-primary" data-i18n="heroButton1">
+          آشنایی بیشتر
+        </a>
+
+        <a href="#achievements" class="btn btn-outline" data-i18n="heroButton2">
+          مشاهده افتخارات
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-photo">
+      <img
+        src="profile.png"
+        alt="امیرمحمد مردانی، دانشجو معلم آموزش فیزیک"
+        fetchpriority="high"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2 data-i18n="aboutTitle">درباره من</h2>
+      <p data-i18n="aboutSubtitle">نگاهی به مسیر و علایق من</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-box reveal">
+
+      <p data-i18n="aboutText1">
+        من امیرمحمد مردانی هستم؛ دانشجو معلم رشته آموزش فیزیک.
+        به یادگیری عمیق، آموزش مفهومی، فعالیت‌های علمی و
+        تجربه فناوری‌های کاربردی علاقه دارم.
+      </p>
+
+      <p data-i18n="aboutText2">
+        باور دارم دانش زمانی ارزشمندتر می‌شود که بتوان آن را
+        به تجربه، خلاقیت و راه‌حل‌های عملی تبدیل کرد.
+        هدفم توسعه توانایی‌های علمی و حرفه‌ای و حرکت در مسیر
+        پژوهش و نوآوری است.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" class="timeline-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2 data-i18n="educationTitle">مسیر تحصیلی من</h2>
+      <p data-i18n="educationSubtitle">روایتی از تجربه‌های دانشگاهی و مسیر رشد علمی</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+
+        <article class="timeline-card">
+
+          <img
+            class="timeline-image"
+            src="mentazeri.jpg"
+            alt="دانشکده فنی شهید منتظری مشهد"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="image-fallback">
+            <span class="fallback-icon">🏛️</span>
+            <strong data-i18n="university1Name">دانشکده فنی شهید منتظری مشهد</strong>
+            <small data-i18n="imageFallback">تصویر اختصاصی دانشگاه در این قسمت قرار می‌گیرد</small>
+          </div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-date" data-i18n="educationDate1">
+              مرحله اول مسیر دانشگاهی
+            </span>
+
+            <h3 data-i18n="university1Name">
+              دانشکده فنی شهید منتظری مشهد
+            </h3>
+
+            <p data-i18n="university1Description">
+              آغاز مسیر دانشگاهی در رشته الکتروتکنیک
+              و کسب تجربه در حوزه برق، الکترونیک
+              و مباحث فنی و مهندسی.
+            </p>
+
+            <span class="timeline-tag" data-i18n="tagElectro">الکتروتکنیک</span>
+            <span class="timeline-tag" data-i18n="tagTechnical">فعالیت فنی</span>
+
+          </div>
+
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+
+        <article class="timeline-card">
+
+          <img
+            class="timeline-image"
+            src="farhangian.jpg"
+            alt="پردیس شهید بهشتی دانشگاه فرهنگیان مشهد"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="image-fallback">
+            <span class="fallback-icon">🎓</span>
+            <strong data-i18n="university2Name">دانشگاه فرهنگیان</strong>
+            <small data-i18n="university2Campus">پردیس شهید بهشتی مشهد</small>
+          </div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-date" data-i18n="educationDate2">
+              مرحله دوم مسیر دانشگاهی · مسیر فعلی
+            </span>
+
+            <h3 data-i18n="university2Name">دانشگاه فرهنگیان</h3>
+
+            <p data-i18n="university2Description">
+              ادامه مسیر علمی در پردیس شهید بهشتی مشهد
+              در رشته آموزش فیزیک؛ با تمرکز بر یادگیری
+              عمیق فیزیک، آموزش مفهومی و تربیت معلم.
+            </p>
+
+            <span class="timeline-tag" data-i18n="tagPhysicsEducation">آموزش فیزیک</span>
+            <span class="timeline-tag" data-i18n="university2Campus">پردیس شهید بهشتی مشهد</span>
+
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" class="achievements-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2 data-i18n="achievementsTitle">افتخارات و دستاوردها</h2>
+      <p data-i18n="achievementsSubtitle">گزیده‌ای از نتایج، تجربه‌ها و فعالیت‌های علمی و آموزشی</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="grid">
+
+      <article class="card achievement-card reveal">
+        <div class="achievement-kicker" data-i18n="achievement1Category">موفقیت در آزمون‌های ورودی</div>
+        <h3 data-i18n="achievement1Title">رتبه ۱۳۳ کنکور کاردانی</h3>
+        <p data-i18n="achievement1Description">
+          کسب رتبه ۱۳۳ در آزمون سراسری پذیرش دوره کاردانی
+          در رشته الکتروتکنیک.
+        </p>
+      </article>
+
+      <article class="card achievement-card reveal">
+        <div class="achievement-kicker" data-i18n="achievement2Category">فعالیت علمی و پروژه گروهی</div>
+        <h3 data-i18n="achievement2Title">پروژه موشک آبی</h3>
+        <p data-i18n="achievement2Description">
+          فعالیت علمی گروه بچه‌های محله وحید که موفقیت آن
+          در سطح کشور در گزارش رسانه شهرآرا بازتاب پیدا کرده است.
+        </p>
+
+        <a class="card-link"
+           href="https://mashhadchehreh.shahraranews.ir/fa/news/11766/موشک-آبی-بچه‌های-محله-وحید-در-کشور-اول-شد"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-i18n="achievement2Link">
+          مطالعه گزارش شهرآرا ←
+        </a>
+      </article>
+
+      <article class="card achievement-card reveal">
+        <div class="achievement-kicker" data-i18n="achievement3Category">افتخار در سطح استانی</div>
+        <h3 data-i18n="achievement3Title">هواپیمای مدل (پهپاد)</h3>
+        <p data-i18n="achievement3Description">
+          کسب رتبه اول استانی در گرایش پهپاد
+          (هواپیمای مدل) در ششمین جشنواره علمی‌پژوهشی.
+        </p>
+      </article>
+
+      <article class="card achievement-card reveal">
+        <div class="achievement-kicker" data-i18n="achievement4Category">سوابق تحصیلی و دانشگاهی</div>
+        <h3 data-i18n="achievement4Title">مسیر دانشگاهی و آموزشی</h3>
+        <p data-i18n="achievement4Description">
+          تجربه تحصیل در دانشکده فنی شهید منتظری مشهد
+          و ادامه مسیر علمی در دانشگاه فرهنگیان،
+          پردیس شهید بهشتی مشهد.
+        </p>
+      </article>
+
+      <article class="card achievement-card reveal">
+        <div class="achievement-kicker" data-i18n="achievement5Category">رشد علمی و توسعه فردی</div>
+        <h3 data-i18n="achievement5Title">فعالیت‌های علمی و آموزشی</h3>
+        <p data-i18n="achievement5Description">
+          تلاش برای توسعه دانش، تجربه‌های آموزشی،
+          یادگیری مستمر و مشارکت در فعالیت‌های علمی.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2 data-i18n="projectsTitle">پروژه‌ها و علایق پژوهشی</h2>
+      <p data-i18n="projectsSubtitle">ایده‌ها، زمینه‌های پژوهشی و مسیر توسعه پروژه‌ها</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="grid">
+
+      <article class="card project-card reveal">
+        <div class="project-kicker" data-i18n="project1Category">فناوری و سامانه‌های هوشمند</div>
+        <h3 data-i18n="project1Title">پایشگر تطبیقی موتور و پمپ</h3>
+        <p data-i18n="project1Description">
+          ایده‌ای برای طراحی یک سامانه پایش تطبیقی با هدف بررسی
+          وضعیت عملکرد موتور و پمپ. در این مرحله، تمرکز بر شناخت
+          پارامترهای مؤثر، طراحی ساختار اولیه و بررسی امکان تحلیل
+          داده‌ها برای شناسایی تغییرات و ناهنجاری‌های عملکردی است.
+        </p>
+        <span class="project-label project-status" data-i18n="project1Status">وضعیت: ایده و طراحی اولیه</span>
+        <span class="project-label">Python · Smart Monitoring</span>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="project-kicker" data-i18n="project2Category">علوم پایه و کاربردهای مهندسی</div>
+        <h3 data-i18n="project2Title">فیزیک و فناوری</h3>
+        <p data-i18n="project2Description">
+          علاقه‌مند به کاربرد اصول فیزیک در
+          مسائل مهندسی، انرژی، تجهیزات هوشمند
+          و فناوری‌های نوین.
+        </p>
+        <span class="project-label">Physics · Research</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="skills-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2 data-i18n="skillsTitle">مهارت‌ها و حوزه‌های علاقه</h2>
+      <p data-i18n="skillsSubtitle">زمینه‌های یادگیری و توسعه فردی</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-list reveal">
+
+      <span class="skill" data-i18n="skill1">فیزیک</span>
+      <span class="skill" data-i18n="skill2">آموزش و تدریس</span>
+      <span class="skill" data-i18n="skill3">پژوهش علمی</span>
+      <span class="skill" data-i18n="skill4">برنامه‌نویسی Python</span>
+      <span class="skill" data-i18n="skill5">فناوری و نوآوری</span>
+      <span class="skill" data-i18n="skill6">پروژه‌های کاربردی</span>
+      <span class="skill" data-i18n="skill7">الکترونیک</span>
+      <span class="skill" data-i18n="skill8">یادگیری مستمر</span>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2 data-i18n="contactTitle">ارتباط و همکاری</h2>
+      <p data-i18n="contactSubtitle">آماده آشنایی با ایده‌ها و تجربه‌های تازه</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-box reveal">
+
+      <p data-i18n="contactDescription">
+        این وب‌سایت برای معرفی مسیر علمی و حرفه‌ای
+        و ثبت فعالیت‌ها و دستاوردهای من ایجاد شده است.
+        از ارتباط با علاقه‌مندان به علم، آموزش،
+        فناوری و پروژه‌های نوآورانه استقبال می‌کنم.
+        برای ارتباط و همکاری می‌توانید از راه‌های زیر با من در تماس باشید.
+      </p>
+
+      <div class="contact-details">
+
+        <a href="tel:+989155872570" class="contact-item">
+          <span class="contact-icon">☎</span>
+          <span>
+            <small data-i18n="phoneLabel">شماره تماس</small>
+            <strong dir="ltr">09155872570</strong>
+          </span>
+        </a>
+
+        <a href="mailto:amirmardani051056@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>
+            <small data-i18n="emailLabel">پست الکترونیکی</small>
+            <strong dir="ltr">amirmardani051056@gmail.com</strong>
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+    <p data-i18n="footerCopyright">
+      © 2026 تمامی حقوق این وب‌سایت متعلق به امیرمحمد مردانی است.
+    </p>
+    <p data-i18n="footerCredit">طراحی و توسعه وب‌سایت شخصی AM</p>
+  </div>
+</footer>
+
+<script>
+
+/* LANGUAGE TRANSLATIONS */
+
+const translations = {
+
+fa: {
+
+  navHome: "خانه",
+  navAbout: "درباره من",
+  navEducation: "تحصیلات",
+  navAchievements: "افتخارات",
+  navProjects: "پروژه‌ها",
+  navSkills: "مهارت‌ها",
+  navContact: "ارتباط",
+
+  heroTitle: "امیرمحمد <span>مردانی</span>",
+  heroDescription: "دانشجو معلم رشته آموزش فیزیک؛ علاقه‌مند به علم، آموزش، فناوری و نوآوری. اینجا روایت مسیر یادگیری، فعالیت‌ها و دستاوردهای من است.",
+  heroButton1: "آشنایی بیشتر",
+  heroButton2: "مشاهده افتخارات",
+
+  aboutTitle: "درباره من",
+  aboutSubtitle: "نگاهی به مسیر و علایق من",
+  aboutText1: "من امیرمحمد مردانی هستم؛ دانشجو معلم رشته آموزش فیزیک. به یادگیری عمیق، آموزش مفهومی، فعالیت‌های علمی و تجربه فناوری‌های کاربردی علاقه دارم.",
+  aboutText2: "باور دارم دانش زمانی ارزشمندتر می‌شود که بتوان آن را به تجربه، خلاقیت و راه‌حل‌های عملی تبدیل کرد. هدفم توسعه توانایی‌های علمی و حرفه‌ای و حرکت در مسیر پژوهش و نوآوری است.",
+
+  educationTitle: "مسیر تحصیلی من",
+  educationSubtitle: "روایتی از تجربه‌های دانشگاهی و مسیر رشد علمی",
+  educationDate1: "مرحله اول مسیر دانشگاهی",
+  educationDate2: "مرحله دوم مسیر دانشگاهی · مسیر فعلی",
+
+  university1Name: "دانشکده فنی شهید منتظری مشهد",
+  university1Description: "آغاز مسیر دانشگاهی در رشته الکتروتکنیک و کسب تجربه در حوزه برق، الکترونیک و مباحث فنی و مهندسی.",
+
+  university2Name: "دانشگاه فرهنگیان",
+  university2Campus: "پردیس شهید بهشتی مشهد",
+  university2Description: "ادامه مسیر علمی در پردیس شهید بهشتی مشهد در رشته آموزش فیزیک؛ با تمرکز بر یادگیری عمیق فیزیک، آموزش مفهومی و تربیت معلم.",
+
+  imageFallback: "تصویر اختصاصی دانشگاه در این قسمت قرار می‌گیرد",
+  tagElectro: "الکتروتکنیک",
+  tagTechnical: "فعالیت فنی",
+  tagPhysicsEducation: "آموزش فیزیک",
+
+  achievementsTitle: "افتخارات و دستاوردها",
+  achievementsSubtitle: "گزیده‌ای از نتایج، تجربه‌ها و فعالیت‌های علمی و آموزشی",
+  achievement1Category: "موفقیت در آزمون‌های ورودی",
+  achievement2Category: "فعالیت علمی و پروژه گروهی",
+  achievement3Category: "افتخار در سطح استانی",
+  achievement4Category: "سوابق تحصیلی و دانشگاهی",
+  achievement5Category: "رشد علمی و توسعه فردی",
+
+  achievement1Title: "رتبه ۱۳۳ کنکور کاردانی",
+  achievement1Description: "کسب رتبه ۱۳۳ در آزمون سراسری پذیرش دوره کاردانی در رشته الکتروتکنیک.",
+
+  achievement2Title: "پروژه موشک آبی",
+  achievement2Description: "فعالیت علمی گروه بچه‌های محله وحید که موفقیت آن در سطح کشور در گزارش رسانه شهرآرا بازتاب پیدا کرده است.",
+  achievement2Link: "مطالعه گزارش شهرآرا ←",
+
+  achievement3Title: "هواپیمای مدل (پهپاد)",
+  achievement3Description: "کسب رتبه اول استانی در گرایش پهپاد (هواپیمای مدل) در ششمین جشنواره علمی‌پژوهشی.",
+
+  achievement4Title: "مسیر دانشگاهی و آموزشی",
+  achievement4Description: "تجربه تحصیل در دانشکده فنی شهید منتظری مشهد و ادامه مسیر علمی در دانشگاه فرهنگیان، پردیس شهید بهشتی مشهد.",
+
+  achievement5Title: "فعالیت‌های علمی و آموزشی",
+  achievement5Description: "تلاش برای توسعه دانش، تجربه‌های آموزشی، یادگیری مستمر و مشارکت در فعالیت‌های علمی.",
+
+  projectsTitle: "پروژه‌ها و علایق پژوهشی",
+  projectsSubtitle: "ایده‌ها، زمینه‌های پژوهشی و مسیر توسعه پروژه‌ها",
+  project1Category: "فناوری و سامانه‌های هوشمند",
+  project1Status: "وضعیت: ایده و طراحی اولیه",
+  project2Category: "علوم پایه و کاربردهای مهندسی",
+
+  project1Title: "پایشگر تطبیقی موتور و پمپ",
+  project1Description: "ایده‌ای برای طراحی یک سامانه پایش تطبیقی با هدف بررسی وضعیت عملکرد موتور و پمپ. در این مرحله، تمرکز بر شناخت پارامترهای مؤثر، طراحی ساختار اولیه و بررسی امکان تحلیل داده‌ها برای شناسایی تغییرات و ناهنجاری‌های عملکردی.",
+
+  project2Title: "فیزیک و فناوری",
+  project2Description: "علاقه‌مند به کاربرد اصول فیزیک در مسائل مهندسی، انرژی، تجهیزات هوشمند و فناوری‌های نوین.",
+
+  skillsTitle: "مهارت‌ها و حوزه‌های علاقه",
+  skillsSubtitle: "زمینه‌های یادگیری و توسعه فردی",
+
+  skill1: "فیزیک",
+  skill2: "آموزش و تدریس",
+  skill3: "پژوهش علمی",
+  skill4: "برنامه‌نویسی Python",
+  skill5: "فناوری و نوآوری",
+  skill6: "پروژه‌های کاربردی",
+  skill7: "الکترونیک",
+  skill8: "یادگیری مستمر",
+
+  contactTitle: "ارتباط و همکاری",
+  contactSubtitle: "آماده آشنایی با ایده‌ها و تجربه‌های تازه",
+
+  contactDescription: "این وب‌سایت برای معرفی مسیر علمی و حرفه‌ای و ثبت فعالیت‌ها و دستاوردهای من ایجاد شده است. از ارتباط با علاقه‌مندان به علم، آموزش، فناوری و پروژه‌های نوآورانه استقبال می‌کنم. برای ارتباط و همکاری می‌توانید از راه‌های زیر با من در تماس باشید.",
+
+  phoneLabel: "شماره تماس",
+  emailLabel: "پست الکترونیکی",
+
+  footerCopyright: "© 2026 تمامی حقوق این وب‌سایت متعلق به امیرمحمد مردانی است.",
+  footerCredit: "طراحی و توسعه وب‌سایت شخصی AM",
+
+  pageTitle: "امیرمحمد مردانی | وب‌سایت شخصی",
+  pageDescription: "وب‌سایت شخصی امیرمحمد مردانی، دانشجو معلم آموزش فیزیک؛ معرفی مسیر علمی، تحصیلات، افتخارات و پروژه‌ها."
+
+},
+
+en: {
+
+  navHome: "Home",
+  navAbout: "About Me",
+  navEducation: "Education",
+  navAchievements: "Achievements",
+  navProjects: "Projects",
+  navSkills: "Skills",
+  navContact: "Contact",
+
+  heroTitle: "Amirmohammad <span>Mardani</span>",
+  heroDescription: "Physics Education student teacher, passionate about science, education, technology and innovation. This website presents my learning journey, activities and achievements.",
+  heroButton1: "Learn More",
+  heroButton2: "View Achievements",
+
+  aboutTitle: "About Me",
+  aboutSubtitle: "A look at my journey and interests",
+  aboutText1: "My name is Amirmohammad Mardani, and I am a student teacher majoring in Physics Education. I am interested in deep learning, conceptual teaching, scientific activities and practical technologies.",
+  aboutText2: "I believe knowledge becomes more valuable when it can be transformed into experience, creativity and practical solutions. My goal is to develop my academic and professional abilities and pursue research and innovation.",
+
+  educationTitle: "My Educational Journey",
+  educationSubtitle: "A story of academic experiences and scientific growth",
+  educationDate1: "First Stage of My Academic Journey",
+  educationDate2: "Second Stage of My Academic Journey · Current",
+
+  university1Name: "Shahid Montazeri Technical College, Mashhad",
+  university1Description: "Beginning my academic journey in Electrotechnics and gaining experience in electrical engineering, electronics and technical subjects.",
+
+  university2Name: "Farhangian University",
+  university2Campus: "Shahid Beheshti Campus, Mashhad",
+  university2Description: "Continuing my academic journey at Shahid Beheshti Campus, majoring in Physics Education, with a focus on deep physics learning, conceptual teaching and teacher education.",
+
+  imageFallback: "The university image will appear here",
+  tagElectro: "Electrotechnics",
+  tagTechnical: "Technical Activities",
+  tagPhysicsEducation: "Physics Education",
+
+  achievementsTitle: "Achievements",
+  achievementsSubtitle: "Selected results, experiences and contributions in science and education",
+  achievement1Category: "Entrance Examination Achievement",
+  achievement2Category: "Collaborative Scientific Project",
+  achievement3Category: "Provincial-Level Achievement",
+  achievement4Category: "Academic Background",
+  achievement5Category: "Scientific Growth and Development",
+
+  achievement1Title: "Rank 133 in the Associate Degree Entrance Exam",
+  achievement1Description: "Achieved rank 133 in the national associate degree entrance examination in Electrotechnics.",
+
+  achievement2Title: "Water Rocket Project",
+  achievement2Description: "A scientific project by the Children of Vahid Neighborhood group, whose national-level success was featured in a Shahrara media report.",
+  achievement2Link: "Read the Shahrara Report →",
+
+  achievement3Title: "Model Aircraft (UAV)",
+  achievement3Description: "Achieved first place at the provincial level in the UAV (model aircraft) category of the 6th Scientific and Research Festival.",
+
+  achievement4Title: "Academic and Educational Journey",
+  achievement4Description: "Studied at Shahid Montazeri Technical College in Mashhad and continued my academic journey at Farhangian University, Shahid Beheshti Campus.",
+
+  achievement5Title: "Scientific and Educational Activities",
+  achievement5Description: "Committed to expanding knowledge, gaining educational experience, continuous learning and participating in scientific activities.",
+
+  projectsTitle: "Projects and Research Interests",
+  projectsSubtitle: "Ideas, research interests and project development",
+  project1Category: "Technology and Intelligent Systems",
+  project1Status: "Status: Concept and Initial Design",
+  project2Category: "Basic Sciences and Engineering Applications",
+
+  project1Title: "Adaptive Motor and Pump Monitoring System",
+  project1Description: "An early-stage concept for an adaptive monitoring system designed to assess motor and pump performance. Current work focuses on identifying relevant parameters, outlining the initial system architecture and exploring data analysis methods for detecting operational changes and anomalies.",
+
+  project2Title: "Physics and Technology",
+  project2Description: "Interested in applying the principles of physics to engineering challenges, energy, smart equipment and emerging technologies.",
+
+  skillsTitle: "Skills and Interests",
+  skillsSubtitle: "Areas of learning and personal development",
+
+  skill1: "Physics",
+  skill2: "Education and Teaching",
+  skill3: "Scientific Research",
+  skill4: "Python Programming",
+  skill5: "Technology and Innovation",
+  skill6: "Practical Projects",
+  skill7: "Electronics",
+  skill8: "Continuous Learning",
+
+  contactTitle: "Contact and Collaboration",
+  contactSubtitle: "Open to new ideas and experiences",
+
+  contactDescription: "This website was created to introduce my academic and professional journey and document my activities and achievements. I welcome communication with people interested in science, education, technology and innovative projects. You can contact me through the following channels.",
+
+  phoneLabel: "Phone Number",
+  emailLabel: "Email Address",
+
+  footerCopyright: "© 2026 All rights reserved to Amirmohammad Mardani.",
+  footerCredit: "Designed and developed by AM",
+
+  pageTitle: "Amirmohammad Mardani | Personal Website",
+  pageDescription: "The personal website of Amirmohammad Mardani, a Physics Education student teacher. Discover his academic journey, achievements and projects."
+
+}
+
+};
+
+/* CHANGE LANGUAGE */
+
+function changeLanguage(language) {
+
+  const selected = translations[language];
+
+  if (!selected) return;
+
+  document.documentElement.lang = language;
+  document.documentElement.dir = language === "fa" ? "rtl" : "ltr";
+
+  document.title = selected.pageTitle;
+
+  document.querySelector('meta[name="description"]')
+    .setAttribute("content", selected.pageDescription);
+
+  document.querySelector('meta[property="og:title"]')
+    .setAttribute("content", selected.pageTitle);
+
+  document.querySelector('meta[property="og:description"]')
+    .setAttribute("content", selected.pageDescription);
+
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+
+    const key = element.getAttribute("data-i18n");
+
+    if (selected[key] !== undefined) {
+      element.innerHTML = selected[key];
+    }
+
+  });
+
+  document.getElementById("faButton")
+    .classList.toggle("active", language === "fa");
+
+  document.getElementById("enButton")
+    .classList.toggle("active", language === "en");
+
+  document.querySelectorAll(".timeline-image").forEach(image => {
+
+    const key = image.alt.includes("منتظری") ||
+                image.alt.includes("Montazeri")
+      ? "university1Name"
+      : "university2Name";
+
+    image.alt = selected[key];
+
+  });
+
+  /* Refresh reveal visibility after language change */
+
+  document.querySelectorAll(".reveal").forEach(element => {
+    element.classList.add("visible");
+  });
+
+}
+
+/* SCROLL REVEAL */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+
+    });
+
+  }, {
+    threshold: 0.12
+  });
+
+  revealElements.forEach(element => {
+    observer.observe(element);
+  });
+
+} else {
+
+  revealElements.forEach(element => {
+    element.classList.add("visible");
+  });
+
+}
+
+/* DEFAULT LANGUAGE: PERSIAN */
+
+changeLanguage("fa");
+
+</script>
+
+</body>
+</html>
