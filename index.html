@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>امیرمحمد مردانی | وب‌سایت شخصی</title>
-<meta name="description" content="وب‌سایت شخصی امیرمحمد مردانی، دانشجو معلم آموزش فیزیک؛ معرفی تحصیلات، افتخارات، پروژه‌ها و مهارت‌ها.">
-<meta name="keywords" content="امیرمحمد مردانی, امیر محمد مردانی, آموزش فیزیک, موشک آبی, شهرآرا">
+<meta name="description" content="وب‌سایت شخصی امیرمحمد مردانی، دانشجو معلم آموزش فیزیک؛ معرفی مسیر علمی، تحصیلات، افتخارات و پروژه‌ها.">
+<meta name="keywords" content="امیرمحمد مردانی, آموزش فیزیک, دانشگاه فرهنگیان, موشک آبی, الکتروتکنیک">
 <meta name="author" content="امیرمحمد مردانی">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://amirmardani051056-netizen.github.io/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="امیرمحمد مردانی | وب‌سایت شخصی">
-<meta property="og:description" content="آشنایی با مسیر علمی، تحصیلی و پروژه‌های امیرمحمد مردانی">
+<meta property="og:description" content="مسیر علمی، دانشگاهی و پروژه‌های امیرمحمد مردانی">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,44 +30,18 @@
   "description": "معرفی فعالیت‌های علمی، آموزشی و پروژه‌های امیرمحمد مردانی"
 }
 </script>
-  <style>
-:root  {
-    --bg: #ffffff;
-    --panel: #ffffff;
-    --panel2: #f5f5f5;
-    --gold: #222222;
-    --gold-light: #555555;
-    --white: #111111;
-    --muted: #666666;
-    --border: #dddddd;
-} /* White and black theme */
-body {
-    background: #ffffff !important;
-    color: #111111 !important;
-}
 
-header, nav, main, section, footer,
-.hero, .card, .panel, .container {
-    background-color: #ffffff !important;
-    color: #111111 !important;
-}
-
-h1, h2, h3, h4, p, span, li, a, label {
-    color: #111111 !important;
-}
-
-.card {
-    border: 1px solid #dddddd !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06) !important;
-} a.btn[href="#about"] {
-    background: #ffffff !important;
-    color: #111111 !important;
-    border: 1px solid #222222 !important;
-}
-
-a.btn[href="#about"]:hover {
-    background: #eeeeee !important;
-    color: #000000 !important;
+<style>
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --soft: #f7f7f7;
+  --black: #111111;
+  --dark: #242424;
+  --gray: #707070;
+  --border: #e8e8e8;
+  --shadow: 0 10px 35px rgba(0,0,0,.055);
+  --radius: 17px;
 }
 
 * {
@@ -76,13 +50,17 @@ a.btn[href="#about"]:hover {
   box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 
 body {
   font-family: 'Vazirmatn', Tahoma, sans-serif;
   background: var(--bg);
-  color: var(--white);
+  color: var(--black);
   line-height: 2;
+  overflow-x: hidden;
 }
 
 a {
@@ -90,237 +68,592 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
-  width: min(1100px, 90%);
+  width: min(1120px, 90%);
   margin: auto;
 }
 
+/* HEADER */
+
 header {
-  background: rgba(10,10,10,.96);
-  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
 }
 
 nav {
-  min-height: 76px;
+  min-height: 78px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 800;
-  color: var(--gold);
   letter-spacing: 1px;
 }
 
+.logo span {
+  color: #777;
+}
+
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 24px;
+  align-items: center;
+  list-style: none;
+  gap: 23px;
   flex-wrap: wrap;
 }
 
-nav a {
+nav ul a {
+  color: #555;
   font-size: 13px;
-  color: #d0ccc4;
-  transition: .3s;
+  font-weight: 600;
+  transition: .25s;
 }
 
-nav a:hover { color: var(--gold); }
+nav ul a:hover {
+  color: #000;
+}
+
+/* HERO */
 
 .hero {
-  min-height: 490px;
+  min-height: 550px;
   display: flex;
   align-items: center;
   text-align: center;
   background:
-    radial-gradient(ellipse at 50% 0%, #332819 0%, #17130e 35%, #0a0a0a 75%);
+    radial-gradient(circle at 50% 10%, #eeeeee 0%, #ffffff 58%);
   border-bottom: 1px solid var(--border);
 }
 
 .hero-content {
-  width: 100%;
-  padding: 85px 0;
+  padding: 100px 0;
 }
 
 .eyebrow {
-  color: var(--gold);
-  font-size: 13px;
+  display: inline-block;
+  font-size: 12px;
   letter-spacing: 2px;
+  color: #777;
+  border: 1px solid #ddd;
+  padding: 6px 17px;
+  border-radius: 30px;
 }
 
-h1 {
-  font-size: clamp(34px, 6vw, 57px);
-  line-height: 1.6;
-  margin: 20px 0;
+.hero h1 {
+  font-size: clamp(39px, 7vw, 70px);
   font-weight: 800;
+  line-height: 1.5;
+  margin: 25px 0 15px;
 }
 
-h1 span { color: var(--gold); }
+.hero h1 span {
+  color: #777;
+}
 
-.hero p {
-  color: var(--muted);
-  max-width: 650px;
+.hero-description {
+  max-width: 670px;
   margin: auto;
   font-size: 15px;
+  color: #666;
+  line-height: 2.4;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 30px;
-  background: var(--gold);
-  color: #17130e;
-  padding: 10px 27px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 11px 27px;
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 700;
   transition: .3s;
 }
 
-.btn:hover {
-  background: var(--gold-light);
+.btn-primary {
+  background: #111;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #444;
   transform: translateY(-3px);
 }
 
-section { padding: 75px 0; }
+.btn-outline {
+  border: 1px solid #222;
+  color: #111;
+}
+
+.btn-outline:hover {
+  background: #eee;
+  transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding: 90px 0;
+}
 
 .section-heading {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 48px;
 }
 
 .section-heading h2 {
-  color: var(--gold);
-  font-size: 27px;
+  font-size: 29px;
+  font-weight: 800;
   margin-bottom: 8px;
 }
 
 .section-heading p {
-  color: var(--muted);
+  color: var(--gray);
   font-size: 13px;
 }
 
-.about {
-  background: #101010;
+.section-line {
+  width: 42px;
+  height: 3px;
+  background: #222;
+  border-radius: 5px;
+  margin: 17px auto 0;
 }
+
+/* ABOUT */
 
 .about-box {
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
-  padding: 30px;
-  background: var(--panel);
+  padding: 38px;
+  background: var(--soft);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  color: #d0ccc4;
+  border-radius: var(--radius);
 }
 
-.about-box p + p { margin-top: 14px; }
+.about-box p {
+  color: #555;
+  font-size: 14px;
+  line-height: 2.5;
+}
+
+.about-box p + p {
+  margin-top: 15px;
+}
+
+/* TIMELINE */
+
+.timeline-section {
+  background: var(--soft);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 55px auto 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  right: 19px;
+  top: 15px;
+  bottom: 15px;
+  width: 2px;
+  background: #d5d5d5;
+}
+
+.timeline-item {
+  position: relative;
+  padding-right: 65px;
+  margin-bottom: 55px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  right: 9px;
+  top: 20px;
+  width: 22px;
+  height: 22px;
+  border: 5px solid var(--soft);
+  background: #111;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #222;
+  z-index: 2;
+}
+
+.timeline-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: .35s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,.09);
+}
+
+.timeline-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.image-fallback {
+  display: none;
+  width: 100%;
+  height: 270px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(135deg,#f0f0f0,#fafafa);
+  color: #555;
+}
+
+.image-fallback strong {
+  font-size: 18px;
+}
+
+.image-fallback small {
+  font-size: 12px;
+  color: #888;
+}
+
+.fallback-icon {
+  font-size: 48px;
+  color: #999;
+}
+
+.timeline-content {
+  padding: 28px;
+}
+
+.timeline-date {
+  display: inline-block;
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 2.3;
+}
+
+.timeline-tag {
+  display: inline-block;
+  margin: 14px 5px 0 0;
+  padding: 5px 13px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  color: #555;
+  font-size: 11px;
+}
+
+/* CARDS */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+  gap: 23px;
 }
 
 .card {
-  background: var(--panel);
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 26px;
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 5px 22px rgba(0,0,0,.035);
   transition: .3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: var(--gold);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+  border-color: #aaa;
 }
 
 .card-number {
-  color: var(--gold);
-  font-size: 13px;
+  color: #999;
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .card h3 {
-  color: var(--gold-light);
-  font-size: 19px;
-  margin: 9px 0;
+  font-size: 18px;
+  margin: 12px 0;
 }
 
 .card p {
-  color: var(--muted);
-  font-size: 14px;
+  color: #666;
+  font-size: 13px;
+  line-height: 2.3;
 }
 
 .card-link {
   display: inline-block;
-  color: var(--gold);
+  color: #222;
   font-size: 13px;
+  font-weight: 700;
   margin-top: 15px;
 }
 
-.card-link:hover { text-decoration: underline; }
+.card-link:hover {
+  text-decoration: underline;
+}
 
-.projects { background: #101010; }
+/* ACHIEVEMENTS */
+
+.achievements-section {
+  background: var(--soft);
+}
+
+.achievement-card {
+  position: relative;
+}
+
+.achievement-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: #222;
+  border-radius: 0 15px 15px 0;
+}
+
+/* PROJECTS */
+
+.project-card {
+  min-height: 220px;
+}
+
+.project-label {
+  display: inline-block;
+  font-size: 11px;
+  color: #777;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 4px 12px;
+  margin-top: 15px;
+}
+
+/* SKILLS */
+
+.skills-section {
+  background: #fff;
+}
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 13px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .skill {
-  padding: 9px 19px;
-  background: var(--panel2);
-  border: 1px solid var(--border);
-  color: var(--gold-light);
+  padding: 10px 20px;
+  border: 1px solid #ddd;
   border-radius: 30px;
+  background: #fafafa;
+  color: #444;
   font-size: 13px;
+  transition: .25s;
 }
 
-.contact {
+.skill:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  transform: translateY(-3px);
+}
+
+/* CONTACT */
+
+.contact-section {
+  background: var(--soft);
   text-align: center;
 }
 
-.contact p {
-  color: var(--muted);
-  font-size: 14px;
+.contact-box {
+  max-width: 750px;
+  margin: auto;
+  padding: 35px;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: var(--radius);
 }
+
+.contact-box p {
+  color: #666;
+  font-size: 14px;
+  line-height: 2.4;
+}
+
+/* FOOTER */
 
 footer {
-  border-top: 1px solid var(--border);
-  padding: 25px 0;
+  background: #111;
+  color: #ddd;
   text-align: center;
-  color: #918a7e;
-  font-size: 12px;
+  padding: 30px 0;
 }
 
-footer span { color: var(--gold); }
+footer p {
+  font-size: 12px;
+  color: #aaa;
+}
 
-@media(max-width:650px) {
+footer strong {
+  color: #fff;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  * {
+    transition-duration: .01ms !important;
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:750px) {
   nav {
     flex-direction: column;
-    padding: 14px 0;
+    padding: 13px 0;
+    gap: 8px;
   }
 
   nav ul {
     justify-content: center;
-    gap: 12px 18px;
+    gap: 10px 16px;
   }
 
-  .grid { grid-template-columns: 1fr; }
+  nav ul a {
+    font-size: 12px;
+  }
 
-  section { padding: 55px 0; }
+  .hero {
+    min-height: 470px;
+  }
 
-  .hero-content { padding: 65px 0; }
+  .hero-content {
+    padding: 75px 0;
+  }
 
-  .about-box { padding: 20px; }
+  .hero-description {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding-right: 48px;
+    margin-bottom: 38px;
+  }
+
+  .timeline-image {
+    height: 220px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+
+  .about-box {
+    padding: 24px;
+  }
+
+  .image-fallback {
+    height: 210px;
+  }
+}
+
+@media(max-width:380px) {
+  nav ul {
+    gap: 8px 12px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .btn {
+    padding: 10px 19px;
+  }
 }
 </style>
 </head>
@@ -330,7 +663,8 @@ footer span { color: var(--gold); }
 <header>
   <div class="container">
     <nav>
-      <a href="#home" class="logo">AM.</a>
+      <a href="#home" class="logo">AM<span>.</span></a>
+
       <ul>
         <li><a href="#home">خانه</a></li>
         <li><a href="#about">درباره من</a></li>
@@ -338,6 +672,7 @@ footer span { color: var(--gold); }
         <li><a href="#achievements">افتخارات</a></li>
         <li><a href="#projects">پروژه‌ها</a></li>
         <li><a href="#skills">مهارت‌ها</a></li>
+        <li><a href="#contact">ارتباط</a></li>
       </ul>
     </nav>
   </div>
@@ -345,35 +680,47 @@ footer span { color: var(--gold); }
 
 <main>
 
+<!-- HOME -->
+
 <section class="hero" id="home">
   <div class="container hero-content">
+
     <div class="eyebrow">PERSONAL WEBSITE · 2026</div>
 
     <h1>امیرمحمد <span>مردانی</span></h1>
 
-    <p>
+    <p class="hero-description">
       دانشجو معلم رشته آموزش فیزیک؛
       علاقه‌مند به علم، آموزش، فناوری و نوآوری.
       اینجا روایت مسیر یادگیری، فعالیت‌ها و دستاوردهای من است.
     </p>
 
-    <a href="#about" class="btn">آشنایی بیشتر</a>
+    <div class="hero-buttons">
+      <a href="#about" class="btn btn-primary">آشنایی بیشتر</a>
+      <a href="#achievements" class="btn btn-outline">مشاهده افتخارات</a>
+    </div>
+
   </div>
 </section>
 
+<!-- ABOUT -->
+
 <section id="about">
   <div class="container">
+
     <div class="section-heading">
       <h2>درباره من</h2>
       <p>نگاهی به مسیر و علایق من</p>
+      <div class="section-line"></div>
     </div>
 
-    <div class="about-box">
+    <div class="about-box reveal">
       <p>
         من امیرمحمد مردانی هستم؛ دانشجو معلم رشته آموزش فیزیک.
         به یادگیری عمیق، آموزش مفهومی، فعالیت‌های علمی و
         تجربه فناوری‌های کاربردی علاقه دارم.
       </p>
+
       <p>
         باور دارم دانش زمانی ارزشمندتر می‌شود که بتوان آن را
         به تجربه، خلاقیت و راه‌حل‌های عملی تبدیل کرد.
@@ -381,117 +728,189 @@ footer span { color: var(--gold); }
         پژوهش و نوآوری است.
       </p>
     </div>
+
   </div>
 </section>
 
-<section id="education">
+<!-- EDUCATION TIMELINE -->
+
+<section id="education" class="timeline-section">
   <div class="container">
+
     <div class="section-heading">
-      <h2>تحصیلات و مسیر علمی</h2>
-      <p>مسیر آموزشی و دانشگاهی</p>
+      <h2>مسیر تحصیلی من</h2>
+      <p>روایتی از تجربه‌های دانشگاهی و مسیر رشد علمی</p>
+      <div class="section-line"></div>
     </div>
 
-    <div class="grid">
-      <article class="card">
-        <div class="card-number">01 / EDUCATION</div>
-        <h3>دانشگاه فرهنگیان</h3>
-        <p>
-          دانشجو معلم در رشته آموزش فیزیک؛
-          علاقه‌مند به یادگیری و توسعه روش‌های
-          علمی و مفهومی آموزش فیزیک.
-        </p>
-      </article>
+    <div class="timeline">
 
-      <article class="card">
-        <div class="card-number">02 / ACADEMIC GOALS</div>
-        <h3>اهداف تحصیلی</h3>
-        <p>
-          گسترش دانش فیزیک، تقویت مبانی ریاضی،
-          مطالعه تخصصی و آمادگی برای ادامه تحصیل
-          در مقاطع بالاتر.
-        </p>
-      </article>
+      <!-- UNIVERSITY 1 -->
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+
+        <article class="timeline-card">
+
+          <img
+            class="timeline-image"
+            src="images/mentazeri.jpg"
+            alt="دانشکده فنی شهید منتظری مشهد"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="image-fallback">
+            <span class="fallback-icon">🏛️</span>
+            <strong>دانشکده فنی شهید منتظری مشهد</strong>
+            <small>تصویر اختصاصی دانشگاه در این قسمت قرار می‌گیرد</small>
+          </div>
+
+          <div class="timeline-content">
+            <span class="timeline-date">مرحله اول مسیر دانشگاهی</span>
+
+            <h3>دانشکده فنی شهید منتظری مشهد</h3>
+
+            <p>
+              آغاز مسیر دانشگاهی در رشته الکتروتکنیک
+              و کسب تجربه در حوزه برق، الکترونیک
+              و مباحث فنی و مهندسی.
+            </p>
+
+            <span class="timeline-tag">الکتروتکنیک</span>
+            <span class="timeline-tag">فعالیت فنی</span>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- UNIVERSITY 2 -->
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+
+        <article class="timeline-card">
+
+          <img
+            class="timeline-image"
+            src="images/farhangian.jpg"
+            alt="پردیس شهید بهشتی دانشگاه فرهنگیان مشهد"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="image-fallback">
+            <span class="fallback-icon">🎓</span>
+            <strong>دانشگاه فرهنگیان</strong>
+            <small>پردیس شهید بهشتی مشهد</small>
+          </div>
+
+          <div class="timeline-content">
+            <span class="timeline-date">مرحله دوم مسیر دانشگاهی · مسیر فعلی</span>
+
+            <h3>دانشگاه فرهنگیان</h3>
+
+            <p>
+              ادامه مسیر علمی در پردیس شهید بهشتی مشهد
+              در رشته آموزش فیزیک؛ با تمرکز بر یادگیری
+              عمیق فیزیک، آموزش مفهومی و تربیت معلم.
+            </p>
+
+            <span class="timeline-tag">آموزش فیزیک</span>
+            <span class="timeline-tag">پردیس شهید بهشتی</span>
+          </div>
+
+        </article>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section id="achievements">
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" class="achievements-section">
   <div class="container">
+
     <div class="section-heading">
       <h2>افتخارات و دستاوردها</h2>
-      <p>تجربه‌هایی در مسیر فعالیت علمی</p>
+      <p>تجربه‌هایی در مسیر فعالیت علمی و آموزشی</p>
+      <div class="section-line"></div>
     </div>
 
     <div class="grid">
-      <article class="card">
-    <div class="card-number">01 / ENTRANCE EXAM</div>
-    <h3>رتبه ۱۳۳ کنکور کاردانی</h3>
-    <p>
-        کسب رتبه ۱۳۳ در آزمون سراسری پذیرش دوره کاردانی
-        در رشته الکتروتکنیک.
-    </p>
-</article>
 
-<article class="card">
-    <div class="card-number">02 / PREVIOUS UNIVERSITY</div>
-    <h3>دانشگاه فنی‌وحرفه‌ای منتظری مشهد</h3>
-    <p>
-        سابقه تحصیل در دانشگاه فنی‌وحرفه‌ای منتظری مشهد
-        در رشته الکتروتکنیک.
-    </p>
-</article>
+      <article class="card achievement-card reveal">
+        <div class="card-number">01 / ENTRANCE EXAM</div>
+        <h3>رتبه ۱۳۳ کنکور کاردانی</h3>
+        <p>
+          کسب رتبه ۱۳۳ در آزمون سراسری پذیرش دوره کاردانی
+          در رشته الکتروتکنیک.
+        </p>
+      </article>
 
-<article class="card">
-    <div class="card-number">03 / CURRENT EDUCATION</div>
-    <h3>دانشگاه فرهنگیان</h3>
-    <p>
-        انتقال از دانشگاه منتظری به دانشگاه فرهنگیان،
-        پردیس شهید بهشتی مشهد و ادامه تحصیل در رشته آموزش فیزیک.
-    </p>
-</article>
-      <article class="card">
-        <div class="card-number">01 / NATIONAL PROJECT</div>
+      <article class="card achievement-card reveal">
+        <div class="card-number">02 / NATIONAL PROJECT</div>
         <h3>پروژه موشک آبی</h3>
         <p>
-          فعالیت علمی گروه بچه‌های محله وحید
-          که موفقیت آن در سطح کشور در گزارش رسانه
-          شهرآرا بازتاب پیدا کرده است.
+          فعالیت علمی گروه بچه‌های محله وحید که موفقیت آن
+          در سطح کشور در گزارش رسانه شهرآرا بازتاب پیدا کرده است.
         </p>
+
         <a class="card-link"
            href="https://mashhadchehreh.shahraranews.ir/fa/news/11766/موشک-آبی-بچه‌های-محله-وحید-در-کشور-اول-شد"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           مطالعه گزارش شهرآرا ←
         </a>
-      </article> <article class="card">
-    <div class="card-number">02 / PROVINCIAL PROJECT</div>
-    <h3>هواپیمای مدل (پهپاد)</h3>
-    <p>
-        کسب رتبه اول استانی در گرایش پهپاد
-        (هواپیمای مدل) در ششمین جشنواره علمی‌پژوهشی.
-    </p>
-</article>
+      </article>
 
-      <article class="card">
-        <div class="card-number">02 / PERSONAL DEVELOPMENT</div>
+      <article class="card achievement-card reveal">
+        <div class="card-number">03 / PROVINCIAL PROJECT</div>
+        <h3>هواپیمای مدل (پهپاد)</h3>
+        <p>
+          کسب رتبه اول استانی در گرایش پهپاد
+          (هواپیمای مدل) در ششمین جشنواره علمی‌پژوهشی.
+        </p>
+      </article>
+
+      <article class="card achievement-card reveal">
+        <div class="card-number">04 / ACADEMIC JOURNEY</div>
+        <h3>مسیر دانشگاهی و آموزشی</h3>
+        <p>
+          تجربه تحصیل در دانشکده فنی شهید منتظری مشهد
+          و ادامه مسیر علمی در دانشگاه فرهنگیان،
+          پردیس شهید بهشتی مشهد.
+        </p>
+      </article>
+
+      <article class="card achievement-card reveal">
+        <div class="card-number">05 / PERSONAL DEVELOPMENT</div>
         <h3>فعالیت‌های علمی و آموزشی</h3>
         <p>
           تلاش برای توسعه دانش، تجربه‌های آموزشی،
           یادگیری مستمر و مشارکت در فعالیت‌های علمی.
         </p>
       </article>
+
     </div>
   </div>
 </section>
 
-<section class="projects" id="projects">
+<!-- PROJECTS -->
+
+<section id="projects">
   <div class="container">
+
     <div class="section-heading">
       <h2>پروژه‌ها و علایق پژوهشی</h2>
       <p>از ایده تا تجربه عملی</p>
+      <div class="section-line"></div>
     </div>
 
     <div class="grid">
-      <article class="card">
+
+      <article class="card project-card reveal">
         <div class="card-number">01 / TECHNOLOGY</div>
         <h3>پایشگر تطبیقی موتور و پمپ</h3>
         <p>
@@ -499,9 +918,10 @@ footer span { color: var(--gold); }
           و پمپ و بررسی امکان تحلیل داده‌ها
           و تشخیص تغییرات عملکردی.
         </p>
+        <span class="project-label">Python · پایش هوشمند</span>
       </article>
 
-      <article class="card">
+      <article class="card project-card reveal">
         <div class="card-number">02 / SCIENCE</div>
         <h3>فیزیک و فناوری</h3>
         <p>
@@ -509,51 +929,101 @@ footer span { color: var(--gold); }
           مسائل مهندسی، انرژی، تجهیزات هوشمند
           و فناوری‌های نوین.
         </p>
+        <span class="project-label">Physics · Research</span>
       </article>
+
     </div>
   </div>
 </section>
 
-<section id="skills">
+<!-- SKILLS -->
+
+<section id="skills" class="skills-section">
   <div class="container">
+
     <div class="section-heading">
       <h2>مهارت‌ها و حوزه‌های علاقه</h2>
       <p>زمینه‌های یادگیری و توسعه فردی</p>
+      <div class="section-line"></div>
     </div>
 
-    <div class="skills-list">
+    <div class="skills-list reveal">
       <span class="skill">فیزیک</span>
       <span class="skill">آموزش و تدریس</span>
       <span class="skill">پژوهش علمی</span>
       <span class="skill">برنامه‌نویسی Python</span>
       <span class="skill">فناوری و نوآوری</span>
       <span class="skill">پروژه‌های کاربردی</span>
+      <span class="skill">الکترونیک</span>
+      <span class="skill">یادگیری مستمر</span>
     </div>
+
   </div>
 </section>
 
-<section class="contact" id="contact">
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
   <div class="container">
+
     <div class="section-heading">
       <h2>ارتباط و همکاری</h2>
       <p>آماده آشنایی با ایده‌ها و تجربه‌های تازه</p>
+      <div class="section-line"></div>
     </div>
-    <p>
-      این وب‌سایت برای معرفی مسیر علمی و حرفه‌ای
-      و ثبت فعالیت‌ها و دستاوردهای من ایجاد شده است.
-    </p>
+
+    <div class="contact-box reveal">
+      <p>
+        این وب‌سایت برای معرفی مسیر علمی و حرفه‌ای
+        و ثبت فعالیت‌ها و دستاوردهای من ایجاد شده است.
+        از ارتباط با علاقه‌مندان به علم، آموزش،
+        فناوری و پروژه‌های نوآورانه استقبال می‌کنم.
+      </p>
+    </div>
+
   </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
   <div class="container">
-    <p>© 2026 تمامی حقوق این وب‌سایت متعلق به
-      <span>امیرمحمد مردانی</span> است.</p>
+    <p>
+      © 2026 تمامی حقوق این وب‌سایت متعلق به
+      <strong>امیرمحمد مردانی</strong> است.
+    </p>
     <p>طراحی و توسعه وب‌سایت شخصی AM</p>
   </div>
 </footer>
+
+<script>
+/* Scroll reveal animation */
+
+const revealElements = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12
+  });
+
+  revealElements.forEach(element => {
+    observer.observe(element);
+  });
+} else {
+  revealElements.forEach(element => {
+    element.classList.add('visible');
+  });
+}
+</script>
 
 </body>
 </html>
