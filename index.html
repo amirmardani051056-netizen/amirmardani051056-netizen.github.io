@@ -16,6 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="امیرمحمد مردانی | وب‌سایت شخصی">
 <meta property="og:description" content="مسیر علمی، دانشگاهی و پروژه‌های امیرمحمد مردانی">
+<meta property="og:image" content="profile.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +36,7 @@
 </script>
 
 <style>
+
 :root {
   --bg: #fff;
   --surface: #fff;
@@ -64,7 +66,6 @@ body {
   color: var(--black);
   line-height: 2;
   overflow-x: hidden;
-  transition: direction .2s;
 }
 
 a {
@@ -136,6 +137,8 @@ nav ul a:hover {
   color: #000;
 }
 
+/* LANGUAGE SWITCH */
+
 .language-switch {
   display: flex;
   align-items: center;
@@ -165,33 +168,47 @@ nav ul a:hover {
   color: #fff;
 }
 
-/* HERO */
+/* PROFESSIONAL PROFILE HERO */
 
 .hero {
-  min-height: 550px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle at 50% 10%, #eee 0%, #fff 58%);
+  min-height: unset;
+  display: block;
+  padding: 55px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
   border-bottom: 1px solid var(--border);
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 45px;
+  direction: ltr;
+}
+
 .hero-content {
-  padding: 100px 0;
+  padding: 45px 0;
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="ltr"] .hero-content {
+  text-align: left;
+  direction: ltr;
 }
 
 .eyebrow {
   display: inline-block;
   font-size: 12px;
   letter-spacing: 2px;
-  color: #777;
+  color: #555;
   border: 1px solid #ddd;
   padding: 6px 17px;
   border-radius: 30px;
 }
 
 .hero h1 {
-  font-size: clamp(39px, 7vw, 70px);
+  font-size: clamp(38px, 5vw, 62px);
   font-weight: 800;
   line-height: 1.5;
   margin: 25px 0 15px;
@@ -202,8 +219,8 @@ nav ul a:hover {
 }
 
 .hero-description {
-  max-width: 670px;
-  margin: auto;
+  max-width: 550px;
+  margin: 0;
   font-size: 15px;
   color: #666;
   line-height: 2.4;
@@ -211,11 +228,37 @@ nav ul a:hover {
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
 }
+
+/* PROFILE IMAGE */
+
+.hero-photo {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #e9edf2;
+  box-shadow: 0 15px 45px rgba(0,0,0,.12);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 73% center;
+  transition: transform .5s ease;
+}
+
+.hero-photo:hover img {
+  transform: scale(1.025);
+}
+
+/* BUTTONS */
 
 .btn {
   display: inline-block;
@@ -721,6 +764,7 @@ html[dir="ltr"] .card-link {
 /* RESPONSIVE */
 
 @media(max-width:750px) {
+
   nav {
     flex-direction: column;
     padding: 13px 0;
@@ -743,15 +787,35 @@ html[dir="ltr"] .card-link {
   }
 
   .hero {
-    min-height: 470px;
+    min-height: unset;
+    padding: 30px 0;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-photo {
+    grid-row: 1;
+    height: 350px;
+    max-width: 430px;
+    margin: auto;
   }
 
   .hero-content {
-    padding: 75px 0;
+    grid-row: 2;
+    padding: 25px 0;
+    text-align: center;
   }
 
   .hero-description {
     font-size: 13px;
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   section {
@@ -805,6 +869,7 @@ html[dir="ltr"] .card-link {
 }
 
 @media(max-width:380px) {
+
   nav ul {
     gap: 8px 12px;
   }
@@ -821,6 +886,7 @@ html[dir="ltr"] .card-link {
     font-size: 11px;
   }
 }
+
 </style>
 </head>
 
@@ -859,24 +925,46 @@ html[dir="ltr"] .card-link {
 <!-- HOME -->
 
 <section class="hero" id="home">
-  <div class="container hero-content">
 
-    <div class="eyebrow">PERSONAL WEBSITE · 2026</div>
+  <div class="container hero-layout">
 
-    <h1 data-i18n="heroTitle">امیرمحمد <span>مردانی</span></h1>
+    <div class="hero-content">
 
-    <p class="hero-description" data-i18n="heroDescription">
-      دانشجو معلم رشته آموزش فیزیک؛
-      علاقه‌مند به علم، آموزش، فناوری و نوآوری.
-      اینجا روایت مسیر یادگیری، فعالیت‌ها و دستاوردهای من است.
-    </p>
+      <div class="eyebrow">PERSONAL WEBSITE · 2026</div>
 
-    <div class="hero-buttons">
-      <a href="#about" class="btn btn-primary" data-i18n="heroButton1">آشنایی بیشتر</a>
-      <a href="#achievements" class="btn btn-outline" data-i18n="heroButton2">مشاهده افتخارات</a>
+      <h1 data-i18n="heroTitle">
+        امیرمحمد <span>مردانی</span>
+      </h1>
+
+      <p class="hero-description" data-i18n="heroDescription">
+        دانشجو معلم رشته آموزش فیزیک؛ علاقه‌مند به علم، آموزش، فناوری و نوآوری.
+        اینجا روایت مسیر یادگیری، فعالیت‌ها و دستاوردهای من است.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#about" class="btn btn-primary" data-i18n="heroButton1">
+          آشنایی بیشتر
+        </a>
+
+        <a href="#achievements" class="btn btn-outline" data-i18n="heroButton2">
+          مشاهده افتخارات
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-photo">
+      <img
+        src="profile.png"
+        alt="امیرمحمد مردانی، دانشجو معلم آموزش فیزیک"
+        fetchpriority="high"
+      >
     </div>
 
   </div>
+
 </section>
 
 <!-- ABOUT -->
@@ -891,6 +979,7 @@ html[dir="ltr"] .card-link {
     </div>
 
     <div class="about-box reveal">
+
       <p data-i18n="aboutText1">
         من امیرمحمد مردانی هستم؛ دانشجو معلم رشته آموزش فیزیک.
         به یادگیری عمیق، آموزش مفهومی، فعالیت‌های علمی و
@@ -903,6 +992,7 @@ html[dir="ltr"] .card-link {
         هدفم توسعه توانایی‌های علمی و حرفه‌ای و حرکت در مسیر
         پژوهش و نوآوری است.
       </p>
+
     </div>
 
   </div>
@@ -941,8 +1031,14 @@ html[dir="ltr"] .card-link {
           </div>
 
           <div class="timeline-content">
-            <span class="timeline-date" data-i18n="educationDate1">مرحله اول مسیر دانشگاهی</span>
-            <h3 data-i18n="university1Name">دانشکده فنی شهید منتظری مشهد</h3>
+
+            <span class="timeline-date" data-i18n="educationDate1">
+              مرحله اول مسیر دانشگاهی
+            </span>
+
+            <h3 data-i18n="university1Name">
+              دانشکده فنی شهید منتظری مشهد
+            </h3>
 
             <p data-i18n="university1Description">
               آغاز مسیر دانشگاهی در رشته الکتروتکنیک
@@ -952,6 +1048,7 @@ html[dir="ltr"] .card-link {
 
             <span class="timeline-tag" data-i18n="tagElectro">الکتروتکنیک</span>
             <span class="timeline-tag" data-i18n="tagTechnical">فعالیت فنی</span>
+
           </div>
 
         </article>
@@ -977,7 +1074,11 @@ html[dir="ltr"] .card-link {
           </div>
 
           <div class="timeline-content">
-            <span class="timeline-date" data-i18n="educationDate2">مرحله دوم مسیر دانشگاهی · مسیر فعلی</span>
+
+            <span class="timeline-date" data-i18n="educationDate2">
+              مرحله دوم مسیر دانشگاهی · مسیر فعلی
+            </span>
+
             <h3 data-i18n="university2Name">دانشگاه فرهنگیان</h3>
 
             <p data-i18n="university2Description">
@@ -988,6 +1089,7 @@ html[dir="ltr"] .card-link {
 
             <span class="timeline-tag" data-i18n="tagPhysicsEducation">آموزش فیزیک</span>
             <span class="timeline-tag" data-i18n="university2Campus">پردیس شهید بهشتی مشهد</span>
+
           </div>
 
         </article>
@@ -1119,6 +1221,7 @@ html[dir="ltr"] .card-link {
     </div>
 
     <div class="skills-list reveal">
+
       <span class="skill" data-i18n="skill1">فیزیک</span>
       <span class="skill" data-i18n="skill2">آموزش و تدریس</span>
       <span class="skill" data-i18n="skill3">پژوهش علمی</span>
@@ -1127,6 +1230,7 @@ html[dir="ltr"] .card-link {
       <span class="skill" data-i18n="skill6">پروژه‌های کاربردی</span>
       <span class="skill" data-i18n="skill7">الکترونیک</span>
       <span class="skill" data-i18n="skill8">یادگیری مستمر</span>
+
     </div>
 
   </div>
@@ -1198,6 +1302,7 @@ html[dir="ltr"] .card-link {
 const translations = {
 
 fa: {
+
   navHome: "خانه",
   navAbout: "درباره من",
   navEducation: "تحصیلات",
@@ -1220,11 +1325,14 @@ fa: {
   educationSubtitle: "روایتی از تجربه‌های دانشگاهی و مسیر رشد علمی",
   educationDate1: "مرحله اول مسیر دانشگاهی",
   educationDate2: "مرحله دوم مسیر دانشگاهی · مسیر فعلی",
+
   university1Name: "دانشکده فنی شهید منتظری مشهد",
   university1Description: "آغاز مسیر دانشگاهی در رشته الکتروتکنیک و کسب تجربه در حوزه برق، الکترونیک و مباحث فنی و مهندسی.",
+
   university2Name: "دانشگاه فرهنگیان",
   university2Campus: "پردیس شهید بهشتی مشهد",
   university2Description: "ادامه مسیر علمی در پردیس شهید بهشتی مشهد در رشته آموزش فیزیک؛ با تمرکز بر یادگیری عمیق فیزیک، آموزش مفهومی و تربیت معلم.",
+
   imageFallback: "تصویر اختصاصی دانشگاه در این قسمت قرار می‌گیرد",
   tagElectro: "الکتروتکنیک",
   tagTechnical: "فعالیت فنی",
@@ -1232,27 +1340,35 @@ fa: {
 
   achievementsTitle: "افتخارات و دستاوردها",
   achievementsSubtitle: "تجربه‌هایی در مسیر فعالیت علمی و آموزشی",
+
   achievement1Title: "رتبه ۱۳۳ کنکور کاردانی",
   achievement1Description: "کسب رتبه ۱۳۳ در آزمون سراسری پذیرش دوره کاردانی در رشته الکتروتکنیک.",
+
   achievement2Title: "پروژه موشک آبی",
   achievement2Description: "فعالیت علمی گروه بچه‌های محله وحید که موفقیت آن در سطح کشور در گزارش رسانه شهرآرا بازتاب پیدا کرده است.",
   achievement2Link: "مطالعه گزارش شهرآرا ←",
+
   achievement3Title: "هواپیمای مدل (پهپاد)",
   achievement3Description: "کسب رتبه اول استانی در گرایش پهپاد (هواپیمای مدل) در ششمین جشنواره علمی‌پژوهشی.",
+
   achievement4Title: "مسیر دانشگاهی و آموزشی",
   achievement4Description: "تجربه تحصیل در دانشکده فنی شهید منتظری مشهد و ادامه مسیر علمی در دانشگاه فرهنگیان، پردیس شهید بهشتی مشهد.",
+
   achievement5Title: "فعالیت‌های علمی و آموزشی",
   achievement5Description: "تلاش برای توسعه دانش، تجربه‌های آموزشی، یادگیری مستمر و مشارکت در فعالیت‌های علمی.",
 
   projectsTitle: "پروژه‌ها و علایق پژوهشی",
   projectsSubtitle: "از ایده تا تجربه عملی",
+
   project1Title: "پایشگر تطبیقی موتور و پمپ",
   project1Description: "پروژه‌ای با هدف پایش هوشمند عملکرد موتور و پمپ و بررسی امکان تحلیل داده‌ها و تشخیص تغییرات عملکردی.",
+
   project2Title: "فیزیک و فناوری",
   project2Description: "علاقه‌مند به کاربرد اصول فیزیک در مسائل مهندسی، انرژی، تجهیزات هوشمند و فناوری‌های نوین.",
 
   skillsTitle: "مهارت‌ها و حوزه‌های علاقه",
   skillsSubtitle: "زمینه‌های یادگیری و توسعه فردی",
+
   skill1: "فیزیک",
   skill2: "آموزش و تدریس",
   skill3: "پژوهش علمی",
@@ -1264,7 +1380,9 @@ fa: {
 
   contactTitle: "ارتباط و همکاری",
   contactSubtitle: "آماده آشنایی با ایده‌ها و تجربه‌های تازه",
+
   contactDescription: "این وب‌سایت برای معرفی مسیر علمی و حرفه‌ای و ثبت فعالیت‌ها و دستاوردهای من ایجاد شده است. از ارتباط با علاقه‌مندان به علم، آموزش، فناوری و پروژه‌های نوآورانه استقبال می‌کنم. برای ارتباط و همکاری می‌توانید از راه‌های زیر با من در تماس باشید.",
+
   phoneLabel: "شماره تماس",
   emailLabel: "پست الکترونیکی",
 
@@ -1273,9 +1391,11 @@ fa: {
 
   pageTitle: "امیرمحمد مردانی | وب‌سایت شخصی",
   pageDescription: "وب‌سایت شخصی امیرمحمد مردانی، دانشجو معلم آموزش فیزیک؛ معرفی مسیر علمی، تحصیلات، افتخارات و پروژه‌ها."
+
 },
 
 en: {
+
   navHome: "Home",
   navAbout: "About Me",
   navEducation: "Education",
@@ -1298,11 +1418,14 @@ en: {
   educationSubtitle: "A story of academic experiences and scientific growth",
   educationDate1: "First Stage of My Academic Journey",
   educationDate2: "Second Stage of My Academic Journey · Current",
+
   university1Name: "Shahid Montazeri Technical College, Mashhad",
   university1Description: "Beginning my academic journey in Electrotechnics and gaining experience in electrical engineering, electronics and technical subjects.",
+
   university2Name: "Farhangian University",
   university2Campus: "Shahid Beheshti Campus, Mashhad",
   university2Description: "Continuing my academic journey at Shahid Beheshti Campus, majoring in Physics Education, with a focus on deep physics learning, conceptual teaching and teacher education.",
+
   imageFallback: "The university image will appear here",
   tagElectro: "Electrotechnics",
   tagTechnical: "Technical Activities",
@@ -1310,27 +1433,35 @@ en: {
 
   achievementsTitle: "Achievements",
   achievementsSubtitle: "Experiences in scientific and educational activities",
+
   achievement1Title: "Rank 133 in the Associate Degree Entrance Exam",
   achievement1Description: "Achieved rank 133 in the national associate degree entrance examination in Electrotechnics.",
+
   achievement2Title: "Water Rocket Project",
   achievement2Description: "A scientific project by the Children of Vahid Neighborhood group, whose national-level success was featured in a Shahrara media report.",
   achievement2Link: "Read the Shahrara Report →",
+
   achievement3Title: "Model Aircraft (UAV)",
   achievement3Description: "Achieved first place at the provincial level in the UAV (model aircraft) category of the 6th Scientific and Research Festival.",
+
   achievement4Title: "Academic and Educational Journey",
   achievement4Description: "Studied at Shahid Montazeri Technical College in Mashhad and continued my academic journey at Farhangian University, Shahid Beheshti Campus.",
+
   achievement5Title: "Scientific and Educational Activities",
   achievement5Description: "Committed to expanding knowledge, gaining educational experience, continuous learning and participating in scientific activities.",
 
   projectsTitle: "Projects and Research Interests",
   projectsSubtitle: "From ideas to practical experience",
+
   project1Title: "Adaptive Motor and Pump Monitoring System",
   project1Description: "A project focused on intelligent monitoring of motor and pump performance, data analysis and identifying changes in operating conditions.",
+
   project2Title: "Physics and Technology",
   project2Description: "Interested in applying the principles of physics to engineering challenges, energy, smart equipment and emerging technologies.",
 
   skillsTitle: "Skills and Interests",
   skillsSubtitle: "Areas of learning and personal development",
+
   skill1: "Physics",
   skill2: "Education and Teaching",
   skill3: "Scientific Research",
@@ -1342,7 +1473,9 @@ en: {
 
   contactTitle: "Contact and Collaboration",
   contactSubtitle: "Open to new ideas and experiences",
+
   contactDescription: "This website was created to introduce my academic and professional journey and document my activities and achievements. I welcome communication with people interested in science, education, technology and innovative projects. You can contact me through the following channels.",
+
   phoneLabel: "Phone Number",
   emailLabel: "Email Address",
 
@@ -1351,6 +1484,7 @@ en: {
 
   pageTitle: "Amirmohammad Mardani | Personal Website",
   pageDescription: "The personal website of Amirmohammad Mardani, a Physics Education student teacher. Discover his academic journey, achievements and projects."
+
 }
 
 };
@@ -1394,15 +1528,18 @@ function changeLanguage(language) {
     .classList.toggle("active", language === "en");
 
   document.querySelectorAll(".timeline-image").forEach(image => {
+
     const key = image.alt.includes("منتظری") ||
                 image.alt.includes("Montazeri")
       ? "university1Name"
       : "university2Name";
 
     image.alt = selected[key];
+
   });
 
   /* Refresh reveal visibility after language change */
+
   document.querySelectorAll(".reveal").forEach(element => {
     element.classList.add("visible");
   });
